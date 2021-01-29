@@ -15,6 +15,16 @@ struct Lab {
         // --------------------------
     }
 
+    // Create a new dictionary where the key is a string and the values are Doubles
+    // Add 3 key value pairs, where the keys are pi, c and e respectively and the values associated
+    // with each are 3.1415, 186282, 2.718
+    func newDictionary() -> [String: Any] {
+        // ----  Your code here ----
+        let result : [String: Double] = ["pi": 3.1415, "c": 186282, "e": 2.718]
+        return result
+        // --------------------------
+    }
+
     // Return all the keys of the input dictionary in alphabetical order
     func allKeys(dictionary: [String: Int]) -> [String] {
         // ----  Your code here ----
@@ -33,6 +43,18 @@ struct Lab {
     func removeKeysFromDict(keys: [String], dictionary: [String: Int]) -> [String: Int] {
         // ----  Your code here ----
 
+        // --------------------------
+    }
+    
+    // Check to see if the value provided is in the supplied dictionary.  If so, return the key that has that value otherwise return nil.
+    func isValueInDictionary(value: Int, dictionary: [String: Int]) -> String? {
+        // ----  Your code here ----
+        let result = dictionary.filter {$0.value == value}
+        if result.count > 0 {
+            return result.keys.first!
+        } else {
+            return nil
+        }
         // --------------------------
     }
 }
