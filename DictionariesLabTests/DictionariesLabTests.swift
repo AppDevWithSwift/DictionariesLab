@@ -21,6 +21,22 @@ class DictionariesLabTests: XCTestCase {
         XCTAssertEqual(Lab().getValueForKey(key: "foo", dictionary: ["foo": 1, "bar": 2, "foobar": 3]), 1)
     }
 
+    func testNewDictionary() throws {
+        let dict = Lab().newDictionary()
+        for key in dict.keys {
+            if !(dict[key] is Double) {
+                XCTFail()
+                return
+            }
+        }
+        if dict["pi"] as! Double == 3.1415 &&
+            dict["c"] as! Double == 186282 &&
+            dict["e"] as! Double == 2.718 {
+            XCTAssertTrue(true)
+        } else {
+            XCTFail()
+        }
+    }
     func testGetValueForKey2() throws {
         XCTAssertEqual(Lab().getValueForKey(key: "bar", dictionary: ["foo": 1, "bar": 2, "foobar": 3]), 2)
     }
@@ -39,4 +55,13 @@ class DictionariesLabTests: XCTestCase {
                        ["c": 6, "d": 2])
     }
 
+    func testValueInDictionary() throws {
+        XCTAssertEqual(Lab().isValueInDictionary(value: 42, dictionary: ["foo": 33, "bar": 21]), nil)
+    }
+
+    func testValueInDictionary1() throws {
+        XCTAssertEqual(Lab().isValueInDictionary(value: 42,
+                                                 dictionary: ["foo": 33, "meaningOfLife": 42,"bar": 21]),
+                       "meaningOfLife")
+    }
 }
