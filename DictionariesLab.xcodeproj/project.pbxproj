@@ -13,7 +13,20 @@
 		19C4CBFF25C43B8E00EA8238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C4CBFE25C43B8E00EA8238 /* Assets.xcassets */; };
 		19C4CC0225C43B8E00EA8238 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C4CC0125C43B8E00EA8238 /* Preview Assets.xcassets */; };
 		19C4CC0525C43B8E00EA8238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C4CC0325C43B8E00EA8238 /* LaunchScreen.storyboard */; };
+		19C4CC0E25C43B9A00EA8238 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4CC0D25C43B9A00EA8238 /* Lab.swift */; };
+		19C4CC1725C43BB300EA8238 /* DictionariesLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4CC1625C43BB300EA8238 /* DictionariesLabTests.swift */; };
+		19C4CC2025C43BEF00EA8238 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4CC0D25C43B9A00EA8238 /* Lab.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19C4CC1925C43BB300EA8238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19C4CBED25C43B8C00EA8238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19C4CBF425C43B8C00EA8238;
+			remoteInfo = DictionariesLab;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		19C4CBF525C43B8C00EA8238 /* DictionariesLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictionariesLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		19C4CC0125C43B8E00EA8238 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19C4CC0425C43B8E00EA8238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19C4CC0625C43B8E00EA8238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C4CC0D25C43B9A00EA8238 /* Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
+		19C4CC1425C43BB300EA8238 /* DictionariesLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DictionariesLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C4CC1625C43BB300EA8238 /* DictionariesLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionariesLabTests.swift; sourceTree = "<group>"; };
+		19C4CC1825C43BB300EA8238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		19C4CBF225C43B8C00EA8238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C4CC1125C43BB300EA8238 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				19C4CBF725C43B8C00EA8238 /* DictionariesLab */,
+				19C4CC1525C43BB300EA8238 /* DictionariesLabTests */,
 				19C4CBF625C43B8C00EA8238 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				19C4CBF525C43B8C00EA8238 /* DictionariesLab.app */,
+				19C4CC1425C43BB300EA8238 /* DictionariesLabTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +85,7 @@
 				19C4CBF825C43B8C00EA8238 /* AppDelegate.swift */,
 				19C4CBFA25C43B8C00EA8238 /* SceneDelegate.swift */,
 				19C4CBFC25C43B8C00EA8238 /* ContentView.swift */,
+				19C4CC0D25C43B9A00EA8238 /* Lab.swift */,
 				19C4CBFE25C43B8E00EA8238 /* Assets.xcassets */,
 				19C4CC0325C43B8E00EA8238 /* LaunchScreen.storyboard */,
 				19C4CC0625C43B8E00EA8238 /* Info.plist */,
@@ -73,6 +100,15 @@
 				19C4CC0125C43B8E00EA8238 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		19C4CC1525C43BB300EA8238 /* DictionariesLabTests */ = {
+			isa = PBXGroup;
+			children = (
+				19C4CC1625C43BB300EA8238 /* DictionariesLabTests.swift */,
+				19C4CC1825C43BB300EA8238 /* Info.plist */,
+			);
+			path = DictionariesLabTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +131,24 @@
 			productReference = 19C4CBF525C43B8C00EA8238 /* DictionariesLab.app */;
 			productType = "com.apple.product-type.application";
 		};
+		19C4CC1325C43BB300EA8238 /* DictionariesLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C4CC1B25C43BB300EA8238 /* Build configuration list for PBXNativeTarget "DictionariesLabTests" */;
+			buildPhases = (
+				19C4CC1025C43BB300EA8238 /* Sources */,
+				19C4CC1125C43BB300EA8238 /* Frameworks */,
+				19C4CC1225C43BB300EA8238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19C4CC1A25C43BB300EA8238 /* PBXTargetDependency */,
+			);
+			name = DictionariesLabTests;
+			productName = DictionariesLabTests;
+			productReference = 19C4CC1425C43BB300EA8238 /* DictionariesLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +160,10 @@
 				TargetAttributes = {
 					19C4CBF425C43B8C00EA8238 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					19C4CC1325C43BB300EA8238 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 19C4CBF425C43B8C00EA8238;
 					};
 				};
 			};
@@ -123,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				19C4CBF425C43B8C00EA8238 /* DictionariesLab */,
+				19C4CC1325C43BB300EA8238 /* DictionariesLabTests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +197,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19C4CC1225C43BB300EA8238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,10 +214,28 @@
 				19C4CBF925C43B8C00EA8238 /* AppDelegate.swift in Sources */,
 				19C4CBFB25C43B8C00EA8238 /* SceneDelegate.swift in Sources */,
 				19C4CBFD25C43B8C00EA8238 /* ContentView.swift in Sources */,
+				19C4CC0E25C43B9A00EA8238 /* Lab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C4CC1025C43BB300EA8238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C4CC1725C43BB300EA8238 /* DictionariesLabTests.swift in Sources */,
+				19C4CC2025C43BEF00EA8238 /* Lab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19C4CC1A25C43BB300EA8238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19C4CBF425C43B8C00EA8238 /* DictionariesLab */;
+			targetProxy = 19C4CC1925C43BB300EA8238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19C4CC0325C43B8E00EA8238 /* LaunchScreen.storyboard */ = {
@@ -323,6 +407,46 @@
 			};
 			name = Release;
 		};
+		19C4CC1C25C43BB300EA8238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K7853APAS;
+				INFOPLIST_FILE = DictionariesLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thewcl.DictionariesLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DictionariesLab.app/DictionariesLab";
+			};
+			name = Debug;
+		};
+		19C4CC1D25C43BB300EA8238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K7853APAS;
+				INFOPLIST_FILE = DictionariesLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thewcl.DictionariesLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DictionariesLab.app/DictionariesLab";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +464,15 @@
 			buildConfigurations = (
 				19C4CC0A25C43B8E00EA8238 /* Debug */,
 				19C4CC0B25C43B8E00EA8238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C4CC1B25C43BB300EA8238 /* Build configuration list for PBXNativeTarget "DictionariesLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C4CC1C25C43BB300EA8238 /* Debug */,
+				19C4CC1D25C43BB300EA8238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
